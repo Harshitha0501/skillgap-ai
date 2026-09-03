@@ -116,3 +116,27 @@ cd backend && pytest        # API specs against the live server
 - `node_modules/` and Python virtualenvs are intentionally excluded from the archive — restore them
   with `yarn install` and `pip install -r requirements.txt`.
 - No third-party AI service is used anywhere; all analysis logic is in `backend/lib/`.
+
+
+## 📸 Application Screenshots
+
+### 🏠 Home Page
+![Home Page](screenshots/Home%20page.png)
+
+### 🔍 Analyze Job Description
+![Analyze JD](screenshots/Analyze%20JD.png)
+
+### 📊 Analysis Report
+![Analysis Report](screenshots/Analysis%20Report.png)
+
+### 🧠 My Skills
+![My Skills](screenshots/My%20Skills.png)
+
+### 📈 Readiness Timeline
+![Readiness Timeline](screenshots/Readiness%20Timeline.png)
+
+### 📋 Job History
+![History](screenshots/History.png)
+
+### ❓ Why Not Shortlisted
+![Why Not Shortlisted](screenshots/Why%20Not%20Shortlisted.png)
