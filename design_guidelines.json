@@ -1,0 +1,356 @@
+{
+  "theme_strategy": {
+    "supported_modes": ["light", "dark"],
+    "default_mode": "dark",
+    "theme_switch_mechanism": "next-themes class toggle on root html element (with seamless switch between clean light recruiter report and high-contrast dark technical dashboard)",
+    "concept": "Dual-Archetype Fusion: Swiss precision data sheets (light mode for recruiter printable reports) merged with obsidian tactical command center (dark mode for developer analysis & roadmap exploration)"
+  },
+  "typography": {
+    "font_family_primary": "Plus Jakarta Sans, sans-serif",
+    "font_family_heading": "Outfit, sans-serif",
+    "font_family_mono": "JetBrains Mono, monospace",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 24,
+      "h4": 20,
+      "body": 16,
+      "caption": 14
+    },
+    "font_imports": [
+      "@import '@fontsource-variable/outfit';",
+      "@import '@fontsource-variable/plus-jakarta-sans';",
+      "@import '@fontsource-variable/jetbrains-mono';"
+    ],
+    "hierarchy_rules": {
+      "hero_title": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight font-heading leading-tight",
+      "section_title": "text-2xl sm:text-3xl font-bold tracking-tight font-heading",
+      "card_title": "text-lg sm:text-xl font-semibold tracking-normal font-heading",
+      "body_text": "text-base font-normal leading-relaxed font-sans",
+      "code_badges": "text-xs font-mono font-medium tracking-wide uppercase",
+      "metric_large": "text-3xl sm:text-4xl lg:text-5xl font-extrabold font-mono tracking-tight"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page_dark",
+        "kind": "solid",
+        "bg": "#0B0F17",
+        "on_bg": "#F1F5F9",
+        "on_bg_muted": "#94A3B8",
+        "roles": {
+          "accent": "#38BDF8",
+          "success": "#34D399",
+          "warning": "#FBBF24",
+          "error": "#F87171",
+          "border": "#1E293B"
+        }
+      },
+      {
+        "name": "panel_dark",
+        "kind": "solid",
+        "bg": "#111827",
+        "on_bg": "#F9FAFB",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "border": "#1F2937",
+          "highlight": "#1E293B",
+          "badge_bg": "#1F2937"
+        }
+      },
+      {
+        "name": "page_light",
+        "kind": "solid",
+        "bg": "#F8FAFC",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "accent": "#0284C7",
+          "success": "#059669",
+          "warning": "#D97706",
+          "error": "#DC2626",
+          "border": "#E2E8F0"
+        }
+      },
+      {
+        "name": "panel_light",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B",
+        "roles": {
+          "border": "#E2E8F0",
+          "highlight": "#F1F5F9",
+          "badge_bg": "#F1F5F9"
+        }
+      },
+      {
+        "name": "recruiter_report_sheet",
+        "kind": "solid",
+        "bg": "#FFFFFF",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#475569",
+        "roles": {
+          "primary_stamp": "#0284C7",
+          "verdict_hire": "#059669",
+          "verdict_review": "#D97706",
+          "verdict_gap": "#DC2626",
+          "divider": "#CBD5E1"
+        }
+      },
+      {
+        "name": "glass_header_dark",
+        "kind": "glass",
+        "contrast_against": "#0B0F17",
+        "guarantee": "backdrop-blur-xl bg-slate-950/80 border-b border-slate-800/80",
+        "on_bg": "#F8FAFC",
+        "on_bg_muted": "#94A3B8"
+      },
+      {
+        "name": "glass_header_light",
+        "kind": "glass",
+        "contrast_against": "#F8FAFC",
+        "guarantee": "backdrop-blur-xl bg-white/80 border-b border-slate-200/80",
+        "on_bg": "#0F172A",
+        "on_bg_muted": "#64748B"
+      }
+    ],
+    "accent": "#0284C7",
+    "on_accent": "#FFFFFF",
+    "tailwind_v4_tokens": {
+      "root_light": {
+        "--background": "#F8FAFC",
+        "--foreground": "#0F172A",
+        "--card": "#FFFFFF",
+        "--card-foreground": "#0F172A",
+        "--popover": "#FFFFFF",
+        "--popover-foreground": "#0F172A",
+        "--primary": "#0284C7",
+        "--primary-foreground": "#FFFFFF",
+        "--secondary": "#F1F5F9",
+        "--secondary-foreground": "#0F172A",
+        "--muted": "#F1F5F9",
+        "--muted-foreground": "#64748B",
+        "--accent": "#E0F2FE",
+        "--accent-foreground": "#0369A1",
+        "--destructive": "#DC2626",
+        "--destructive-foreground": "#FFFFFF",
+        "--border": "#E2E8F0",
+        "--input": "#E2E8F0",
+        "--ring": "#0284C7",
+        "--radius": "0.625rem"
+      },
+      "dark": {
+        "--background": "#0B0F17",
+        "--foreground": "#F8FAFC",
+        "--card": "#111827",
+        "--card-foreground": "#F8FAFC",
+        "--popover": "#111827",
+        "--popover-foreground": "#F8FAFC",
+        "--primary": "#38BDF8",
+        "--primary-foreground": "#0B0F17",
+        "--secondary": "#1F2937",
+        "--secondary-foreground": "#F8FAFC",
+        "--muted": "#1E293B",
+        "--muted-foreground": "#94A3B8",
+        "--accent": "#0C4A6E",
+        "--accent-foreground": "#BAE6FD",
+        "--destructive": "#EF4444",
+        "--destructive-foreground": "#FFFFFF",
+        "--border": "#1F2937",
+        "--input": "#1F2937",
+        "--ring": "#38BDF8",
+        "--radius": "0.625rem"
+      }
+    }
+  },
+  "entry_surfaces": {
+    "/": "split hero with live JD paste interactive analyzer on right, value metrics and instant recruiter scorecard demo on left",
+    "/login": "branded split auth panel with product positioning and candidate readiness stats on left, login form on right",
+    "/signup": "branded split auth panel with instant onboarding checklist on left, signup form on right"
+  },
+  "layout_blueprints": {
+    "navigation": {
+      "type": "sticky crystal glass bar with top blur",
+      "items": [
+        {"label": "Analyze JD", "href": "/analyze", "testId": "nav-analyze-link"},
+        {"label": "My Profile & Skills", "href": "/profile", "testId": "nav-profile-link"},
+        {"label": "Why Not Shortlisted?", "href": "/insights", "testId": "nav-insights-link"},
+        {"label": "Job Comparison", "href": "/compare", "testId": "nav-compare-link"},
+        {"label": "History", "href": "/history", "testId": "nav-history-link"}
+      ],
+      "actions": [
+        {"type": "theme-toggle", "testId": "theme-toggle-button"},
+        {"type": "user-menu", "testId": "user-profile-menu"}
+      ]
+    },
+    "pages": {
+      "dashboard_analyze": {
+        "layout": "Bento Asymmetric Grid (8-column master + 4-column dynamic feed)",
+        "sections": [
+          {
+            "id": "jd-input-panel",
+            "title": "Job Description & Role Target",
+            "components": [
+              "JD text area with sample job presets (e.g. Senior Fullstack Engineer, DevOps Lead, Python Backend, React Frontend, Cloud Data Engineer)",
+              "Candidate profile selector & resume switcher",
+              "Instant Deterministic Analyzer button (rule-based NLP regex matching engine with synonym expansion)"
+            ]
+          },
+          {
+            "id": "match-overview-hero",
+            "title": "Match Intelligence & Readiness Ring",
+            "components": [
+              "Animated Circular Match Gauge (0-100%) with color-coded grade (Exceptional 85%+, Solid 70-84%, Needs Upskilling <70%)",
+              "Sub-score breakdown bars: Technical Core, Tooling/Frameworks, Experience/Seniority, Project Scope, Keyword Density",
+              "Quick Stat pills: Total Req Skills, Matched (✓), Partial/Adjacent (⚠️), Missing (❌)"
+            ]
+          },
+          {
+            "id": "skills-matrix-split",
+            "title": "Skills Diagnostic Matrix",
+            "components": [
+              "Strong Skills Panel (✓ validated with candidate proficiency badge and proof from resume)",
+              "Missing / Gap Skills Panel (❌ critical blockers + ⚠️ adjacent skills) with severity tags (High Priority vs Nice-to-have)"
+            ]
+          },
+          {
+            "id": "roadmap-timeline",
+            "title": "Interactive Learning Roadmap & Dependency Chain",
+            "components": [
+              "Numbered step-by-step learning cards with priority tags (HIGH / MEDIUM / LOW)",
+              "Estimated learning days badge per milestone + Total Sprint Duration",
+              "Visual dependency connector (e.g. Docker -> Kubernetes -> Helm; or TypeScript -> Next.js -> SSR Patterns)",
+              "Curated practice tasks & learning objectives per step"
+            ]
+          },
+          {
+            "id": "interview-question-generator",
+            "title": "Tiered Interview Question Vault",
+            "components": [
+              "Tabs for: 1. Basic (Foundational concepts), 2. Intermediate (Practical debugging/architecture), 3. Project-Based (Scenario & system design), 4. JD-Specific (Direct requirements extracted from the target JD)",
+              "Expandable question cards with sample answer pointers, key discussion points, and what recruiters look for"
+            ]
+          },
+          {
+            "id": "recruiter-scorecard-modal",
+            "title": "Recruiter View & PDF Print Ready Card",
+            "components": [
+              "Official Recruiter Evaluation format with Verdict Stamp ('Strong Candidate', 'Interview with Prep', 'High Risk Skill Gap')",
+              "Top 3 Candidate Strengths & Top 3 Critical Red Flags",
+              "Export to PDF / Print-clean layout trigger"
+            ]
+          }
+        ]
+      },
+      "why_not_shortlisted": {
+        "layout": "High Density Data Intelligence Grid",
+        "description": "Aggregates all analyzed job descriptions across the platform / candidate history to pinpoint systemic gaps.",
+        "components": [
+          "Market Demand Frequency Chart (e.g., 'Docker requested in 18/20 JDs', 'PostgreSQL in 16/20 JDs')",
+          "Biggest Recurring Blocker Callout: The single skill causing the most rejections/gaps across all pasted jobs",
+          "Competency Distribution Radar / Bar chart",
+          "Fast-track recommendations to unlock the highest percentage of job opportunities"
+        ]
+      },
+      "job_comparison": {
+        "layout": "Side-by-Side Dual Column Matrix",
+        "description": "Compares Job A vs Job B against the candidate's active profile.",
+        "components": [
+          "Job A vs Job B selector dropdowns with quick preset comparison",
+          "Head-to-head match % meter with winner badge",
+          "Interactive Skill-by-Skill comparison table with ✓/❌ markers and overlap delta",
+          "Decision matrix: Which job offers faster interview readiness vs higher compensation upside"
+        ]
+      },
+      "profile_skills_editor": {
+        "layout": "Interactive Tag Cloud & Categorized Skill Manager",
+        "components": [
+          "Categorized skill pills (Languages, Frameworks, Cloud & DevOps, Databases, Architecture, Testing)",
+          "Proficiency level selector (Beginner, Intermediate, Advanced, Lead)",
+          "Resume text importer / parser that auto-populates skills from paste or pre-loaded resume",
+          "Quick-add custom skills with autocomplete"
+        ]
+      }
+    }
+  },
+  "motion": {
+    "principles": "Deliberate and physical, snappy 200-300ms transitions for data interactions, staggered reveal for skill badges and learning roadmap steps.",
+    "keyframes": {
+      "stagger_fade_up": {
+        "initial": {"opacity": 0, "y": 14},
+        "animate": {"opacity": 1, "y": 0},
+        "transition": {"duration": 0.25, "ease": "easeOut"}
+      },
+      "gauge_progress": {
+        "transition": {"duration": 0.8, "ease": "easeOut"}
+      },
+      "card_hover_lift": "hover:-translate-y-0.5 transition-transform duration-200 ease-out"
+    },
+    "accessibility": {
+      "respect_reduced_motion": "Wrap framer-motion components with useReducedMotion checks and fall back to instant render."
+    }
+  },
+  "accessibility": {
+    "wcag_compliance": "WCAG 2.1 AA Compliant with >= 4.5:1 text contrast on all normal text surfaces and >= 3:1 for metric displays and icons.",
+    "keyboard_navigation": "Full keyboard accessibility on all modal dialogs, tab lists, accordion question cards, and roadmap steps with explicit focus rings.",
+    "aria_roles": "aria-expanded on accordions, role='status' on live calculations, aria-label on all action icon buttons."
+  },
+  "media": {
+    "image_urls": {
+      "developer_avatars": [
+        {
+          "url": "https://images.unsplash.com/photo-1566753323558-f4e0952af115?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODgyNjQwNTd8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Male software engineer avatar",
+          "use_case": "Candidate profile avatar in header and recruiter scorecard"
+        },
+        {
+          "url": "https://images.unsplash.com/photo-1574281570877-bd815ebb50a4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAxODF8MHwxfHNlYXJjaHwzfHxwcm9mZXNzaW9uYWwlMjBkZXZlbG9wZXIlMjBwb3J0cmFpdHxlbnwwfHx8fDE3ODgyNjQwNTd8MA&ixlib=rb-4.1.0&q=85",
+          "description": "Senior tech lead portrait",
+          "use_case": "Recruiter reviewer avatar in scorecard"
+        }
+      ],
+      "dashboard_abstract_textures": [
+        {
+          "url": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzV8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjB0ZWNoJTIwb2ZmaWNlJTIwYW5hbHl0aWNzfGVufDB8fHx8MTc4ODI2NDA1N3ww&ixlib=rb-4.1.0&q=85",
+          "description": "Tech telemetry screens display",
+          "use_case": "Landing hero decorative background panel"
+        }
+      ]
+    }
+  },
+  "component_structure": {
+    "root_css": "/app/frontend/src/index.css",
+    "app_shell": "/app/frontend/src/App.tsx",
+    "components": {
+      "navbar": "frontend/src/components/layout/Navbar.tsx",
+      "match_gauge": "frontend/src/components/analytics/MatchGauge.tsx",
+      "skills_matrix": "frontend/src/components/analytics/SkillsMatrix.tsx",
+      "learning_roadmap": "frontend/src/components/roadmap/LearningRoadmap.tsx",
+      "interview_vault": "frontend/src/components/interview/InterviewQuestions.tsx",
+      "recruiter_report": "frontend/src/components/report/RecruiterReportModal.tsx",
+      "job_comparator": "frontend/src/components/compare/JobComparator.tsx",
+      "market_insights": "frontend/src/components/insights/MarketInsights.tsx"
+    }
+  },
+  "deterministic_engine_spec": {
+    "description": "Rule-based pattern matching engine with pre-indexed tech dictionary covering 150+ skills, categorized into Core Languages, Frameworks, Databases, Cloud/DevOps, Architecture, and Testing.",
+    "scoring_formula": "Match% = (Matched_Core * 0.40) + (Matched_Frameworks * 0.30) + (Matched_DevOps_DB * 0.20) + (Matched_Tooling * 0.10)",
+    "recommendation_thresholds": {
+      ">= 80%": "Strong Candidate / Ready to Interview",
+      "65% - 79%": "Solid Potential / Fast-track Upskilling",
+      "< 65%": "Significant Skill Gap / Needs Roadmap Completion"
+    }
+  },
+  "instructions_to_main_agent": {
+    "universal_rules": [
+      "Every clickable button, link, tab, select, and report element MUST have a clear data-testid in kebab-case.",
+      "Support both Dark mode (sleek obsidian developer cockpit) and Light mode (crisp recruiter dossier look). Default to dark mode on initial load with an instant one-click toggle in the navbar.",
+      "Seed pre-filled demo data: 4 diverse candidate profiles (e.g. Fullstack Dev, Backend Python Dev, Junior React Dev, DevOps Specialist) and 5 realistic Job Descriptions (e.g. Senior Fullstack Engineer at Stripe-like fintech, Cloud Native Engineer at enterprise SaaS, Lead Frontend Architect, Python AI Platform Engineer, Junior Software Engineer) so the app works richly out of the box.",
+      "Implement PDF/Print Export for the Recruiter Report Card using browser print stylesheets (@media print) with clean white background, high-contrast typography, and official recruiter scorecard layout.",
+      "Provide comprehensive preset samples for one-click testing of all features including Job-to-Job comparison and Why Not Shortlisted intelligence charts."
+    ]
+  }
+}
