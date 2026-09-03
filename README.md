@@ -5,6 +5,22 @@ score, exactly which skills are missing, what to learn first (in dependency orde
 days and free tutorials), which interview questions to prepare with model-answer pointers, and a
 printable recruiter scorecard.
 
+## 🚀 Project Overview
+
+SkillGap AI is a full-stack career development platform that helps job seekers understand how well their skills match a job description and what they should learn next.
+
+The application allows users to:
+
+- Analyze job descriptions against their current skills
+- Identify missing and adjacent skills
+- Generate a prioritized learning roadmap
+- Prepare for role-specific interview questions
+- Track job applications and outcomes
+- Compare multiple job opportunities
+- Monitor skill and career readiness progress
+
+The project uses a deterministic rule-based engine for skill extraction, matching, scoring, and roadmap generation.
+
 Everything is computed by a **deterministic rule engine — no AI API, no keys, no latency, no bill.**
 
 ## Features
