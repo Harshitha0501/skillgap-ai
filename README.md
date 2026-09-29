@@ -1,3 +1,5 @@
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://skillgap-ai-mu.vercel.app/)
+
 # SkillGap AI — Job Description → Skill Gap, Learning Roadmap & Interview Prep
 
 Paste a job description. SkillGap AI compares it against your resume skills and returns a match
