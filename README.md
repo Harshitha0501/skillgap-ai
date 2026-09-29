@@ -1,152 +1,330 @@
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://skillgap-ai-mu.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_SkillGap_AI-2563EB?style=for-the-badge)](https://skillgap-ai-mu.vercel.app/)
 
-![SkillGap AI Banner](skillgap-ai-banner.png)
+<p align="center">
+  <img src="skillgap-ai-banner.png" alt="SkillGap AI Banner" width="100%">
+</p>
 
-# SkillGap AI — Job Description → Skill Gap, Learning Roadmap & Interview Prep
+<h1 align="center">SkillGap AI</h1>
 
-Paste a job description. SkillGap AI compares it against your resume skills and returns a match
-score, exactly which skills are missing, what to learn first (in dependency order, with estimated
-days and free tutorials), which interview questions to prepare with model-answer pointers, and a
-printable recruiter scorecard.
+<h3 align="center">Job Description Analysis • Skill Gap Detection • Learning Roadmaps • Interview Preparation</h3>
 
-## 🌐 Live Demo
+<p align="center">
+  <a href="https://skillgap-ai-mu.vercel.app/">
+    <img src="https://img.shields.io/badge/Live_Demo-Visit_Now-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo">
+  </a>
+</p>
 
-🚀 **Try SkillGap AI here:**
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/TypeScript-Strict-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+</p>
 
-[Click here to open SkillGap AI](https://skillgap-ai-mu.vercel.app/)
+---
 
-## 🚀 Project Overview
+## 📌 Overview
 
-SkillGap AI is a full-stack career development platform that helps job seekers understand how well their skills match a job description and what they should learn next.
+**SkillGap AI** is a full-stack career development platform that helps job seekers understand how their current skills align with job descriptions and identify what they need to learn next.
 
-The application allows users to:
+Paste a job description, compare it against your resume skills, and get a personalized skill gap analysis, a prioritized learning roadmap, and interview preparation resources.
 
-- Analyze job descriptions against their current skills
-- Identify missing and adjacent skills
-- Generate a prioritized learning roadmap
-- Prepare for role-specific interview questions
-- Track job applications and outcomes
-- Compare multiple job opportunities
-- Monitor skill and career readiness progress
+The platform uses a **deterministic, rule-based engine** for skill extraction, matching, scoring, and roadmap generation. No third-party AI API or API key is required.
 
-The project uses a deterministic rule-based engine for skill extraction, matching, scoring, and roadmap generation.
+## 🌐 Live Application
 
-Everything is computed by a **deterministic rule engine — no AI API, no keys, no latency, no bill.**
+🚀 **[Launch SkillGap AI](https://skillgap-ai-mu.vercel.app/)**
 
-## Features
+## ✨ Key Features
 
-| Feature | What it does |
-|---|---|
-| Skill profile | Paste resume text **or upload a PDF** — skills are extracted server-side and editable as category pills |
-| JD analysis | Weighted match score, ✓ strong / ⚠️ adjacent / ❌ missing skills, sub-scores (technical, tooling, experience, project, keyword coverage) |
-| Learning roadmap | Gaps ordered by dependency + category weight, each with HIGH/MEDIUM/LOW priority, estimated days, dependency chain, **2 curated free tutorials**, and an "I have learned X" tick-box that recomputes every saved analysis |
-| Interview vault | Basic / Intermediate / Project-based / JD-specific questions, each with expandable answer pointers |
-| Recruiter view | Printable scorecard with sub-scores, top strengths, top gaps, readiness bar and a verdict stamp (Export PDF via browser print) |
-| Why not shortlisted? | Skill demand frequency across every analyzed job (e.g. "Docker requested in 6/6"), biggest recurring blocker, and unlock recommendation |
-| Job-to-job comparison | Two roles side by side with a ✓/❌ skill matrix and a best-match verdict |
-| Application tracker | Status (Applied / Interviewing / Rejected / Offer), applied date and notes per job, plus an outcome insight correlating rejections with match score |
-| Readiness timeline | Weekly chart of your average match score and skills added, with a headline delta |
+| Feature                           | Description                                                                                   |
+| --------------------------------- | --------------------------------------------------------------------------------------------- |
+| 📄 Resume Skill Extraction        | Paste resume text or upload a PDF to extract and edit your skills.                            |
+| 🎯 Job Description Analysis       | Calculate a weighted match score and identify strong, adjacent, and missing skills.           |
+| 🗺️ Personalized Learning Roadmap | Get prioritized learning tasks with estimated days, dependencies, and free tutorials.         |
+| 🧠 Interview Preparation          | Practice basic, intermediate, project-based, and job-specific questions with answer pointers. |
+| 📊 Recruiter Scorecard            | View strengths, skill gaps, readiness metrics, and export a printable scorecard.              |
+| 🔍 Shortlisting Insights          | Identify frequently requested skills and recurring gaps across analyzed jobs.                 |
+| ⚖️ Job Comparison                 | Compare two job opportunities using a skill matrix and match results.                         |
+| 📋 Application Tracker            | Track applications, interview stages, rejections, offers, dates, and notes.                   |
+| 📈 Readiness Timeline             | Monitor weekly changes in average match scores, skills, and job analysis activity.            |
 
-## Stack
+## 🛠️ Technology Stack
 
-- **Backend** — FastAPI (Python 3.11), Pydantic v2, motor (async MongoDB), pypdf, PyJWT + passlib
-- **Frontend** — Vite, React 19, TypeScript (strict), Tailwind CSS v4, shadcn/ui, TanStack Query, recharts
-- **Auth** — email/password with a JWT in an httpOnly cookie
-- **Engine** — `backend/lib/`: `skills.py` (90+ skill dictionary with aliases, categories, learning days,
-  dependencies, adjacency), `engine.py` (extraction + weighted scoring + roadmap), `questions.py`
-  (question bank + hints), `resources.py` (curated free learning links)
+### Frontend
 
-## Run it locally
+* React 19
+* TypeScript (strict)
+* Vite
+* Tailwind CSS v4
+* shadcn/ui
+* TanStack Query
+* Recharts
 
-Requirements: Python 3.11+, Node 20+, MongoDB running locally.
+### Backend
+
+* Python 3.11
+* FastAPI
+* Pydantic v2
+* Motor (async MongoDB)
+* pypdf
+* PyJWT and passlib
+
+### Database & Authentication
+
+* MongoDB
+* Email/password authentication
+* JWT stored in an HTTP-only cookie
+
+### Skill Analysis Engine
+
+* Rule-based skill extraction and matching
+* Weighted scoring and skill categorization
+* Dependency-based learning roadmaps
+* Interview question bank and curated learning resources
+
+## 🧠 How the Analysis Works
+
+1. Extract skills from resume text or an uploaded PDF.
+2. Analyze the job description to identify required skills.
+3. Match existing skills against job requirements.
+4. Calculate a weighted match score and identify skill gaps.
+5. Generate a prioritized learning roadmap with estimated learning days.
+6. Recommend interview preparation questions and learning resources.
+
+**Note:** SkillGap AI uses a deterministic rule-based engine rather than a third-party generative AI API.
+
+## 🚀 Getting Started
+
+Follow these steps to run SkillGap AI locally.
+
+### Prerequisites
+
+* Python 3.11+
+* Node.js 20+
+* MongoDB running locally
+* Yarn
+
+### 1. Clone the repository
 
 ```bash
-# 1. Backend
-cd backend
-python -m venv .venv && source .venv/bin/activate      # Windows: .venv\Scripts\activate
-pip install -r requirements.txt
-cp .env.example .env        # or edit .env: MONGO_URL, DB_NAME, CORS_ORIGINS, JWT_SECRET
-python seed.py              # optional: demo candidate + 5 analyzed jobs + timeline history
-uvicorn server:app --reload --port 8001
+git clone https://github.com/Harshitha0501/skillgap-ai.git
+cd skillgap-ai
+```
 
-# 2. Frontend (second terminal)
+### 2. Set up the backend
+
+```bash
+cd backend
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+**Windows:**
+
+```bash
+.venv\Scripts\activate
+```
+
+**macOS/Linux:**
+
+```bash
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Configure environment variables:
+
+```bash
+cp .env.example .env
+```
+
+Update `.env` with your MongoDB connection, database name, CORS settings, and JWT secret.
+
+Optionally seed demo data:
+
+```bash
+python seed.py
+```
+
+Start the backend:
+
+```bash
+uvicorn server:app --reload --port 8001
+```
+
+### 3. Set up the frontend
+
+Open a second terminal:
+
+```bash
 cd frontend
 yarn install
-yarn dev                    # http://localhost:3000  (proxies /api → :8001)
+yarn dev
 ```
 
-Demo login after seeding: **demo@skillgap.ai / demo1234**
+The frontend runs at:
 
-## Environment (`backend/.env`)
+`http://localhost:3000`
 
-```
+The backend API runs at:
+
+`http://localhost:8001`
+
+### Demo Login
+
+After running the seed script, use the following demo account:
+
+* **Email:** `demo@skillgap.ai`
+* **Password:** `demo1234`
+
+## ⚙️ Environment Configuration
+
+Create a `.env` file inside the `backend` directory:
+
+```env
 MONGO_URL="mongodb://localhost:27017"
 DB_NAME="app"
 CORS_ORIGINS="*"
 JWT_SECRET="change-me"
 ```
 
-## API
+Use a secure secret and appropriate CORS settings for production deployments.
 
-All routes are mounted under `/api`.
+## 🔌 API Overview
 
-```
-POST   /api/auth/signup | /api/auth/login | /api/auth/logout
-GET    /api/auth/me                PUT /api/auth/me
-GET    /api/skills                 POST /api/resume/parse | /api/resume/upload (multipart)
-POST   /api/skills/learn           # roadmap tick-box → recompute all analyses
-POST   /api/analyses               GET /api/analyses | /api/analyses/{id}   DELETE /api/analyses/{id}
-PATCH  /api/analyses/{id}/application
-GET    /api/insights               POST /api/compare        GET /api/progress
-```
+All API routes are mounted under `/api`.
 
-## Data model (MongoDB collections)
+| Method | Endpoint                         | Purpose                   |
+| ------ | -------------------------------- | ------------------------- |
+| POST   | `/api/auth/signup`               | Register a user           |
+| POST   | `/api/auth/login`                | Log in                    |
+| POST   | `/api/auth/logout`               | Log out                   |
+| GET    | `/api/auth/me`                   | Get current user          |
+| PUT    | `/api/auth/me`                   | Update user profile       |
+| GET    | `/api/skills`                    | Retrieve skills           |
+| POST   | `/api/resume/parse`              | Parse resume text         |
+| POST   | `/api/resume/upload`             | Upload and parse a resume |
+| POST   | `/api/skills/learn`              | Update learned skills     |
+| POST   | `/api/analyses`                  | Create a job analysis     |
+| GET    | `/api/analyses`                  | List analyses             |
+| GET    | `/api/analyses/{id}`             | Get an analysis           |
+| DELETE | `/api/analyses/{id}`             | Delete an analysis        |
+| PATCH  | `/api/analyses/{id}/application` | Update application status |
+| GET    | `/api/insights`                  | Retrieve insights         |
+| POST   | `/api/compare`                   | Compare job opportunities |
+| GET    | `/api/progress`                  | Retrieve progress data    |
 
-- `users` — name, email, password_hash, skills[], experience_years, resume_text
-- `analyses` — role_title, company, jd_text, all scores, required/strong/partial/missing skills,
-  roadmap[], questions[], app_status, applied_date, notes
-- `progress` — weekly snapshots: average_match, skills_count, jobs_count, event
+## 🗄️ Database Structure
 
-## Scoring, briefly
+The application uses MongoDB collections:
 
-Requirements are extracted with longest-alias-first matching, then weighted by category
-(languages 30%, frameworks 25%, databases 15%, cloud/DevOps 15%, architecture 8%, testing 4%,
-tooling 3%). An adjacent skill you already know counts as half a match. Readiness =
-0.45·match + 0.2·technical + 0.15·experience + 0.1·project + 0.1·keywords, with verdict thresholds
-at 80% and 65%.
+* **users:** User profiles, credentials, skills, experience, and resume text.
+* **analyses:** Job descriptions, scores, skill matches, roadmaps, interview questions, and application tracking details.
+* **progress:** Weekly snapshots of match scores, skills, job counts, and activity.
 
-## Tests
+## 📊 Scoring Methodology
+
+### Skill Category Weights
+
+| Category       | Weight |
+| -------------- | -----: |
+| Languages      |    30% |
+| Frameworks     |    25% |
+| Databases      |    15% |
+| Cloud / DevOps |    15% |
+| Architecture   |     8% |
+| Testing        |     4% |
+| Tooling        |     3% |
+
+Adjacent skills count as half a match.
+
+### Readiness Formula
+
+`Readiness = 0.45 × Match + 0.20 × Technical + 0.15 × Experience + 0.10 × Project + 0.10 × Keywords`
+
+Verdict thresholds are 80% and 65%.
+
+## 🧪 Tests
+
+Run the backend tests:
 
 ```bash
-cd backend && pytest        # API specs against the live server
+cd backend
+pytest
 ```
-
-## Notes
-
-- `node_modules/` and Python virtualenvs are intentionally excluded from the archive — restore them
-  with `yarn install` and `pip install -r requirements.txt`.
-- No third-party AI service is used anywhere; all analysis logic is in `backend/lib/`.
-
 
 ## 📸 Application Screenshots
 
+Explore the main features of SkillGap AI.
+
 ### 🏠 Home Page
-![Home Page](screenshots/Home%20page.png)
+
+![SkillGap AI Home Page](screenshots/Home%20page.png)
 
 ### 🔍 Analyze Job Description
-![Analyze JD](screenshots/Analyze%20JD.png)
+
+![Analyze Job Description](screenshots/Analyze%20JD.png)
 
 ### 📊 Analysis Report
+
 ![Analysis Report](screenshots/Analysis%20Report.png)
 
 ### 🧠 My Skills
+
 ![My Skills](screenshots/My%20Skills.png)
 
 ### 📈 Readiness Timeline
+
 ![Readiness Timeline](screenshots/Readiness%20Timeline.png)
 
 ### 📋 Job History
-![History](screenshots/History.png)
 
-### ❓ Why Not Shortlisted
+![Job History](screenshots/History.png)
+
+### ❓ Why Not Shortlisted?
+
 ![Why Not Shortlisted](screenshots/Why%20Not%20Shortlisted.png)
+
+## 📁 Project Structure
+
+```text
+skillgap-ai/
+├── backend/
+│   ├── lib/
+│   │   ├── skills.py
+│   │   ├── engine.py
+│   │   ├── questions.py
+│   │   └── resources.py
+│   ├── server.py
+│   ├── seed.py
+│   └── requirements.txt
+├── frontend/
+│   ├── src/
+│   ├── package.json
+│   └── vite.config.ts
+├── screenshots/
+├── skillgap-ai-banner.png
+└── README.md
+```
+
+## 👩‍💻 Author
+
+**Harshitha C.**
+
+* GitHub: [Harshitha0501](https://github.com/Harshitha0501)
+* Repository: [SkillGap AI](https://github.com/Harshitha0501/skillgap-ai)
+* Live Demo: [Launch SkillGap AI](https://skillgap-ai-mu.vercel.app/)
+
+---
+
+<p align="center">
+  <b>SkillGap AI — Understand your skill gaps. Build your roadmap. Prepare for your next opportunity.</b>
+</p>
