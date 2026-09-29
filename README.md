@@ -5,6 +5,12 @@ score, exactly which skills are missing, what to learn first (in dependency orde
 days and free tutorials), which interview questions to prepare with model-answer pointers, and a
 printable recruiter scorecard.
 
+## 🌐 Live Demo
+
+🚀 **Try SkillGap AI here:**
+
+[Click here to open SkillGap AI](https://skillgap-ai-mu.vercel.app/)
+
 ## 🚀 Project Overview
 
 SkillGap AI is a full-stack career development platform that helps job seekers understand how well their skills match a job description and what they should learn next.
